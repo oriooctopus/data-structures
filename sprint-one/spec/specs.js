@@ -33,7 +33,6 @@ define([
     describe('stack shared behavior', function() {
 
       verifyClass(instantiator).followsPattern(variant, {}, prototypeOfInstances);
-
       it('reports a size of zero for a new stack', function() {
         expect(stack.size()).to.equal(0);
       });
@@ -151,7 +150,7 @@ define([
       });
 
       it('removes the oldest item, after newer items have already been added and removed', function() {
-        console.log('!!!!!!!!!!!!!');
+        debugger;
         queue.enqueue('a');
         queue.enqueue('b');
         queue.dequeue();
