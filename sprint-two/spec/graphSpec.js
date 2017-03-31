@@ -28,7 +28,6 @@ describe('graph', function() {
   });
 
   it('should create edges between two nodes', function() {
-    debugger;
     graph.addNode(2);
     graph.addNode(1);
     graph.addNode(3);
@@ -47,6 +46,7 @@ describe('graph', function() {
   });
 
   it('should remove edges between nodes when a node is removed', function() {
+    // debugger;
     graph.addNode(4);
     graph.addNode(5);
     graph.addEdge(5, 4);
