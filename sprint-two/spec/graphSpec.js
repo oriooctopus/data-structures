@@ -28,6 +28,7 @@ describe('graph', function() {
   });
 
   it('should create edges between two nodes', function() {
+    debugger;
     graph.addNode(2);
     graph.addNode(1);
     graph.addNode(3);
