@@ -16,9 +16,9 @@ Graph.prototype.addNode = function(node) {
 // Return a boolean value indicating if the value passed to contains is represented in the graph.
 Graph.prototype.contains = function(node) {
   for (var key in this.nodes) {
-  	if (this.nodes[key].value === node) {
-  	  return true;
-  	}
+    if (this.nodes[key].value === node) {
+      return true;
+    }
   }
   return false;
 };
@@ -27,7 +27,7 @@ Graph.prototype.contains = function(node) {
 Graph.prototype.removeNode = function(node) {
   var currentEdges = this.nodes[node].edges; 
   for (var key in currentEdges) {
-  	this.removeEdge(this.nodes[node].value, currentEdges[key]);
+    this.removeEdge(this.nodes[node].value, currentEdges[key]);
   }
   delete this.nodes[node];
 };
@@ -36,7 +36,7 @@ Graph.prototype.removeNode = function(node) {
 Graph.prototype.hasEdge = function(fromNode, toNode) {
   var fromHasTo, toHasFrom;
   if (this.nodes.hasOwnProperty(fromNode)) {
-  	fromHasTo = this.nodes[fromNode].edges.hasOwnProperty(toNode);
+    fromHasTo = this.nodes[fromNode].edges.hasOwnProperty(toNode);
   }
   if (this.nodes.hasOwnProperty(toNode)) {
     toHasFrom = this.nodes[toNode].edges.hasOwnProperty(fromNode);
