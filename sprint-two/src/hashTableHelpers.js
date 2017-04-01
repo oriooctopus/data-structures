@@ -15,21 +15,21 @@ var LimitedArray = function(limit) {
   var storage = [];
 
   var limitedArray = {};
-  limitedArray.get = function(index) {
+  limitedArray.get = function(index) { //checks the limit of the index, if passed, return value of index
     checkLimit(index);
     return storage[index];
   };
-  limitedArray.set = function(index, value) {
+  limitedArray.set = function(index, value) { // checks too see if it passes limit test, if so, sets provided value to index
     checkLimit(index);
     storage[index] = value;
   };
-  limitedArray.each = function(callback) {
+  limitedArray.each = function(callback) { // applies the callback to each of the storage elements.
     for (var i = 0; i < storage.length; i++) {
       callback(storage[i], i, storage);
     }
   };
 
-  var checkLimit = function(index) {
+  var checkLimit = function(index) { //checks that the index is not a number and not equal or greater than the index
     if (typeof index !== 'number') {
       throw new Error('setter requires a numeric index for its first argument');
     }
