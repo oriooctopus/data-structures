@@ -62,7 +62,6 @@ describe('linkedList', function() {
   it('should add a value to the head', function() {
     linkedList.addToHead(4);
     linkedList.addToTail(5);
-    debugger;
     expect(linkedList.head.value).to.equal(4);
   })
   // add more tests here to test the functionality of linkedList

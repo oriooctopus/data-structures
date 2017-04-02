@@ -3,8 +3,8 @@
  */
 
 
-var HashTable = function() {
-  this._limit = 8;
+var HashTable = function(limit) {
+  this._limit = limit || 8;
   this._storage = LimitedArray(this._limit);
 };
 
@@ -50,3 +50,12 @@ HashTable.prototype.remove = function(k) {
     }
   }
 };
+
+HashTable.prototype.grow = function() {
+  // limit = old limit * 2
+  // create a new hash table
+  // iterate through old hash table
+    // iterate through each bucket
+      // call insert on current tuple
+  li
+}

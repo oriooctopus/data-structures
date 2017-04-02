@@ -45,7 +45,13 @@ describe('tree', function() {
     tree.addChild(5);
     tree.children[0].addChild(7);
     expect(tree.children[0].children[0].parent.value).to.equal(5);
-    debugger;
-  })
+  });
+
+  it('should correctly remove parent from tree', function() {
+    tree.addChild(5);
+    tree.children[0].addChild(7);
+    tree.children[0].addChild(6);
+    tree.children[0].children[1].removeFromParent();
+  });
 
 });

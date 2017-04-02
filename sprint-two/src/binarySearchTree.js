@@ -8,7 +8,7 @@ var BinarySearchTree = function(value) {
 
 var binarySearchMethods = {};
 
-binarySearchMethods.contains = function(valWanted) {
+binarySearchMethods.
   var currentVal = this;
   while (true) {
     if (currentVal.value === valWanted) {
@@ -69,6 +69,5 @@ binarySearchMethods.depthFirstLog = function(cb) {
 //   // value is the midpoints
 //   // if there are things to the left
 //   	// left equals an object that is returned by binarySearchMethods(leftHalf)
-//   	// right equals an object that is returned by binarySearchMethods(rightHalf)
-//   // return the object
+//   	// right equals an object that is returned by binarySearchMetho[1]//   // return the object
 // }
