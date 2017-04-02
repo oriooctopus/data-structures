@@ -69,5 +69,5 @@ binarySearchMethods.depthFirstLog = function(cb) {
 //   // value is the midpoints
 //   // if there are things to the left
 //   	// left equals an object that is returned by binarySearchMethods(leftHalf)
-//   	// right equals an object that is returned by binarySearchMetho[1]//   // return the object
+//   	// right equals an object that is returned by binarySearchMetho[1]fjgfgfjghfhgfhgfhgfgfhgfjjhgfghjjhgvjjjjjjj```~~]//   // return the object
 // }
